@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/parallaxStyle.css">
+    <link rel="stylesheet" href="../css/bigRedButton.css">
+    <link rel="stylesheet" href="../css/popUpModal.css">
+    <script src="../js/bigRedButtonAction.js"></script>
+    <title>Khoa CSS Parallax</title>
+    
+</head>
+<body>
+    <div class="parallax_wrapper">
+        <div class="parallax_group intro_screen center" id="intro">
+            HELLO! MY NAME IS HENRY
+        </div>
+
+        <div class="parallax_group" id="group-1">
+            <div class="parallax_layer center mid_layer">
+               
+            </div>
+            <div class="parallax_layer center top_layer">
+                <div class="graph-layout">
+                    <div>
+                        Skills
+                    </div>
+                    <div class="center">
+                        <img src="../img/skill.png" class="skill-graph">
+                        <img src="../img//How I would describe myself.png" class="skill-graph"> 
+                    </div>
+                    <div class="center">
+                        <img src="../img/Frameworks Experience.png" class="skill-graph">
+                        <img src="../img/Database.png" class="skill-graph">
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="parallax_group" id="group-2">
+            <div class="parallax_layer center mid_layer">
+              
+            </div>
+            <div class="parallax_layer center top_layer">
+                <div class="graph-layout">
+                    <div>
+                        Development Experience
+                    </div>
+                    <div class="center">
+                        <img src="../img/skill.png" class="skill-graph">
+                        <img src="../img//How I would describe myself.png" class="skill-graph"> 
+                    </div>
+                    <div class="center">
+                        <img src="../img/Frameworks Experience.png" class="skill-graph">
+                        <img src="../img/Database.png" class="skill-graph">
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax_group" id="group-3">
+            <div class="parallax_layer center mid_layer">
+             
+            </div>
+            <div class="parallax_layer center top_layer">
+                Work Experience
+            </div>
+        </div>
+
+        <div class="parallax_group" id="group-4">
+            <div class="parallax_layer center mid_layer">
+              
+            </div>
+            <div class="parallax_layer center top_layer">
+                About Me
+            </div>
+        </div>
+        <div class="parallax_group outro_screen center" id="outro">
+            <div class="center">
+                <span id="bigRed" class="non-pushed-button center" onmousedown="BigRedButtonMouseDown()" onmouseup="BigRedButtonMouseUp()" href="mailto:khoa.vinh2000@gmail.com"><p class="text90s">CLICK</p></span>
+            </div>
+        </div>
+    </div>
+    <div class="bg-modal">
+        <div class="modal-content">
+            <br>
+            <span class="text90s"> Thank you for checking out my website!</span>
+            <br>
+            <br>
+            <span class="text90s"> This website is built with:</span>
+            <br>
+            <br>
+            <span class="text90s"> - Passion</span>
+            <br>
+            <span class="text90s"> - Curiosity</span>
+            <br>
+            <span class="text90s"> - Determination</span>
+            <br>
+            <br>
+            <span class="text90s quote"> I wake up everyday to make a change</span>
+            <br>
+            <span class="text90s quote"> Something is better than nothing</span>
+            <br>
+            <br>
+            <span class="text90s"> If you have any questions, I am always ready to answer in a timely manner</span>
+            <br>
+            <br>
+            <span class="text90s"> Contact Info:</span>
+            <br>
+            <span class="text90s"> khoa.vinh2000@gmail.com</span>
+            <br>
+            <span class="text90s"> (+1) 416-857-0231</span>
+            <br>
+            <br>
+            <button class="button90s widebutton" onclick="closeModal()">OK</button>
+
+        </div>
+    </div>
+</body>
+</html>

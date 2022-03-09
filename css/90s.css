@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: green;
+}
+
+font-face{
+    font-family: "Modeseven";
+    font-style: normal;
+    src: url(../CSS\ Lib/font/modeseven-font/Modeseven-L3n5.ttf);
+
+}
+.button90s{
+    font-family: Modeseven;
+    font-style: normal;
+    font-size: large;
+}
+.widebutton{
+    width: 100px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text90s{
+    font-family: Modeseven;
+    font-style: normal;
+    font-size: large;
+}
+.quote{
+    text-decoration: underline;
+    font-style: italic;
+}

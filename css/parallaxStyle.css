@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+font-face{
+    font-family: "Modeseven";
+    font-style: normal;
+    src: url(../CSS\ Lib/font/modeseven-font/Modeseven-L3n5.ttf);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    font-family: Modeseven;
+    font-style: normal;
+    color: white;
+}
+.parallax_wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+    font-size: 4em;
+}
+.intro_screen{
+    height: 100vh;
+    background-color: #ff5003;  
+}
+.outro_screen{
+    height: 100vh;
+    background-color: white;
+}
+.parallax_group{
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+.parallax_layer{
+    position: absolute;
+    inset: 0;
+
+}
+
+.base_layer{
+    /* scale calculation: 1 + (Z transform value * -1)/ perspective:  */
+    transform: translateZ(-300px) scale(2);
+}
+.mid_layer{
+    transform: translateZ(0);
+}
+.top_layer{
+    transform: translateZ(100px) scale(0.5);
+}
+#intro{
+    z-index: 0;
+}
+#group-1{
+    z-index: -1;
+   
+}
+#group-1 > .mid_layer{
+    background-color: #002347;
+}
+#group-2{
+   
+}
+#group-2 > .mid_layer{
+    background-color: #FD7702;
+  
+}
+#group-2 > .top_layer{
+
+}
+#group-3{
+
+}
+#group-3 > .mid_layer{
+    background-color: #003366;
+}
+#group-4 > .mid_layer{
+    background-color: #ff8e00;
+}
+#outro{
+    background-color: #003f7d;
+}
+
+.skill-graph{
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+}
+.graph-layout{
+    float: left;
+}
